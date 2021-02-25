@@ -2,8 +2,12 @@
 //     alert("still working on it")
 
 // }
-let cart = [];
+let cart = {};
 let cartadd = (temp) => {
-  cart.push(temp)
-  console.log(cart)
+  if(!cart.hasOwnProperty(temp)){
+    cart[temp] = 1;
+  }
+  else{
+    cart[temp] += 1;
+  }
 }
