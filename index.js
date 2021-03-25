@@ -12,6 +12,17 @@ let cartadd = (temp) => {
   }
 }
 
+let cartItem = (temp,temp2) => {
+    return `<p><b>${temp}</b>: ${temp2}</p>`
+}
+
+let showCart = () => {
+  for(let i in cart){
+    console.log(`${i} and ${cart[i]}`);
+    document.querySelector('.cartbox').innerHTML += cartItem(i,cart[i]);
+  }
+}
+
 let temp = document.getElementsByClassName("mycard")
  console.log(temp)
  let maintainence1=()=>
