@@ -160,13 +160,15 @@ font-weight: 1000;
 }
 
 .cardlad{
-    height:130vh;
+    margin-top: 15px;
+    padding: 12px 16px;
+    height:auto;
     display:flex;
-    justify-content: space-around;
-  width: 50vw;
-  flex-flow:row wrap;
-  align-content: space-around;
-
+    justify-content: space-between;
+    width: 50vw;
+    flex-flow:row wrap;
+    align-content: space-around;
+    align-items: space-between;
 }
 
 .mycard{
