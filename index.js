@@ -36,4 +36,44 @@ let temp = document.getElementsByClassName("mycard")
   }
   
  }
-}
+ }
+ let maintainence3=()=>
+ {
+  for(const i of temp){
+  if(i.classList.contains("cupcake")){
+    i.style.display = "flex"
+  
+
+  }
+  else{
+    i.style.display = "none"
+  }
+  
+}}
+let maintainence4=()=>
+ {
+  for(const i of temp){
+  if(i.classList.contains("sweets")){
+    i.style.display = "flex"
+  
+
+  }
+  else{
+    i.style.display = "none"
+  }
+  
+ }}
+ let maintainence5=()=>
+ {
+  for(const i of temp){
+  if(i.classList.contains("doughnut")){
+    i.style.display = "flex"
+  
+
+  }
+  else{
+    i.style.display = "none"
+  }
+  
+ }}
+
