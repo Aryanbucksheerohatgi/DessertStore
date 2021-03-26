@@ -21,12 +21,24 @@ let cartItem = (temp,temp2) => {
     `
 }
 
-let showCart = () => {
-  document.querySelector('.cartbox').innerHTML = "";
+let clearCart = () => {
+  document.querySelector('.cartb').innerHTML = "";
+  document.querySelector('.cartb').innerHTML += `<div class="tot"><p><span class="lower">Your Total Amount Is:</span> <span class="higher">Rs0</p></span></div>`;
   for(let i in cart){
-    console.log(`${i} and ${cart[i]}`);
-    document.querySelector('.cartbox').innerHTML += cartItem(i,cart[i]);
+    delete cart[i];
   }
+}
+
+let showCart = () => {
+  document.querySelector('.cartb').innerHTML = "";
+  let total = 0;
+  for(let i in cart){
+    document.querySelector('.cartb').innerHTML += cartItem(i,cart[i]);
+    total += cart[i]*150;
+  }
+  console.log(total);
+  document.querySelector('.cartb').innerHTML += `<div class="tot"><p><span class="lower">Your Total Amount Is:</span> <span class="higher">Rs${total}</p></span></div>`
+  document.querySelector(".cartbox").style.display = "flex";
 }
 
 let temp = document.getElementsByClassName("mycard")

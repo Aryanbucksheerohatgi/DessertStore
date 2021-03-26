@@ -24,11 +24,12 @@ nav{
     width: 511px;
     position: absolute;
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     right: 0%;
     top: 100px;
     border: 4px solid black;
+    overflow-y: scroll;
 }
 nav > ul{
     display: flex;
@@ -248,3 +249,29 @@ font-weight: 1000;
     justify-content: space-around;
 }
 
+.tot{
+  
+    display: flex;
+    justify-content: center;
+}
+.lower{
+    font-size: 30px;
+
+}
+.higher{
+    font-size: 40px;
+}
+.btnm{
+    background-color: transparent;
+    border: 2px solid black;
+    height:60px;
+    width: 172px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+}
+.holder{
+    display: flex;
+    justify-content: space-around;
+    
+}
