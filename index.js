@@ -13,10 +13,16 @@ let cartadd = (temp) => {
 }
 
 let cartItem = (temp,temp2) => {
-    return `<p><b>${temp}</b>: ${temp2}</p>`
+    return `
+    <div class="citem">
+    <h5><u>${temp}:</u> <i>${temp2}</i></h5> 
+    <p>${temp2*150}Rs</p>
+    <div>
+    `
 }
 
 let showCart = () => {
+  document.querySelector('.cartbox').innerHTML = "";
   for(let i in cart){
     console.log(`${i} and ${cart[i]}`);
     document.querySelector('.cartbox').innerHTML += cartItem(i,cart[i]);
